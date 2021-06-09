@@ -30,6 +30,7 @@ defmodule HogeWeb do
   def view do
     quote do
       use Phoenix.View,
+        pattern: "**/*",
         root: "lib/hoge_web/templates",
         namespace: HogeWeb
 
