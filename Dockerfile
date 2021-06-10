@@ -5,6 +5,7 @@ RUN apt update
 RUN apt install -y erlang elixir inotify-tools nodejs npm git
 RUN apt install -y git
 RUN yes | mix archive.install hex phx_new 1.4.17
-RUN cd /root/hoge & mix deps.get
+WORKDIR /root/hoge 
+RUN mix deps.get
 COPY phx.sh /root
 #RUN mkdir /root/work
