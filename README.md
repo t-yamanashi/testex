@@ -1,12 +1,13 @@
 # testex
 気軽にPhoenixをDockerで実験的動かしたいrepository
 
-・検証済み
+■使い方
+sudo docker-compose up
 
-   Dockerfile
- 
-・未検証（作成中）
+■ブラウザで動作確認
+http://Ipアドレス:4000/api/sample
 
-   execdocker.sh　Dockerファイルからimageを作成して実行まで
+■Docker環境の構築方法
+sudo apt install docker.io
+sudo apt install docker-compose
 
-   phx.sh Docker内で実行予定のコマンド
