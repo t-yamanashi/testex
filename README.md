@@ -12,5 +12,6 @@ http://Ipアドレス:4000/api/sample
 ■Docker環境の構築方法
 
 sudo apt install docker.io
+
 sudo apt install docker-compose
 
