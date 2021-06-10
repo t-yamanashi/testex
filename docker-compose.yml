@@ -1,0 +1,11 @@
+version: '3'
+
+services: 
+    server:
+        build:
+            context: .
+        command: [/root/phx.sh]
+        volumes:
+            - "./hoge:/root/hoge:rw"
+        ports:
+            - "4000:4000"
