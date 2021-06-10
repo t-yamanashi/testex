@@ -3,5 +3,5 @@
 #yes | mix archive.install hex phx_new 1.4.17
 #yes | mix phx.new hoge --no-ecto --no-webpack
 cd hoge
-mix deps.get
+#mix deps.get
 echo y | mix phx.server
