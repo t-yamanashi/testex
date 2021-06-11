@@ -1,0 +1,2 @@
+msg = inspect( elem( Code.eval_string( params[ "code" ] ), 0 ) )
+{:ok, msg }

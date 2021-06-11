@@ -1,0 +1,10 @@
+defmodule Test do
+  def int(arg) do
+     elem(Integer.parse(arg), 0)
+  end
+end
+
+v1 = params["v1"]
+v2 = params["v2"]
+msg = Test.int(v1) * Test.int(v2)
+%{ msg => :ok }
