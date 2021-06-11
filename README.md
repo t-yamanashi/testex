@@ -1,5 +1,6 @@
 # testex
 気軽にPhoenixをDockerで実験的動かしたいrepository
+!!注意!! セキュリティーホールになるためこのDockerはプライベートネットワークで遊ぶだけにしてください
 
 ■使い方
 
@@ -33,4 +34,12 @@ sudo docker exec -it testex_server_1 bash
 
 sudo docker logs -f testex_server_1
 
+■NeosVRでお遊び用サンプル
 
+http://IPアドレス:4000/api/ymn
+
+・引数　v1 + v2　の結果を出力します
+
+http://IPアドレス:4000/api/ymn2
+
+・引数 codeにelixirのコードを送ると結果を返す
