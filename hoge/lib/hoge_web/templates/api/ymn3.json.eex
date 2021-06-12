@@ -1,8 +1,8 @@
 cmd = params["cmd"] 
 v1 = params["v1"]
 #System.cmd("git",["--version"])
-dc = "\""
-exec = "System.cmd(" <> dc <> cmd <> dc <>", [" <> dc <>  v1 <> dc <> "])"
+qm = "\""
+exec = "System.cmd(" <> qm <> cmd <> qm <>", [" <> qm <>  v1 <> qm <> "])"
 msg = inspect( elem( Code.eval_string(exec), 0 ) )
 #msg = exec
 {:ok, msg }
