@@ -44,3 +44,8 @@ http://IPアドレス:4000/api/ymn
 http://IPアドレス:4000/api/ymn2
 
 ・引数 codeにelixirのコードを送ると結果を返す
+
+
+http://IPアドレス:4000/api/ymn3
+
+・引数 cmdにコマンド v1　引数
