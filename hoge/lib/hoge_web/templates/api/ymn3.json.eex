@@ -1,5 +1,6 @@
 cmd = params["cmd"] 
 v1 = params["v1"]
 exec = "System.cmd(\"" <> cmd <> "\", [\"" <>  v1 <> "\"])"
-msg = inspect( elem( Code.eval_string(cmd), 0 ) )
+#msg = inspect( elem( Code.eval_string(cmd), 0 ) )
+msg = exec
 {:ok, msg }
