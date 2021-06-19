@@ -1,0 +1,4 @@
+v1 = params["v1"]
+File.write "/dev/ttyUSB0", v1
+msg = "OK " <> v1
+{:ok, msg }
