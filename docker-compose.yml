@@ -9,6 +9,6 @@ services:
             - "./hoge:/root/hoge:rw"
         devices:
             #- "/dev/ttyUSB0:/dev/ttyUSB0"
-            - "/dev/ttyUSB0:/dev/ttyACM0"  
+            - "/dev/ttyACM0:/dev/ttyACM0"  
         ports:
             - "4000:4000"
