@@ -8,7 +8,9 @@ defmodule Ymn do
   def start do
     {:ok ,state} = Circuits.UART.start_link 
     GenServer.start_link(__MODULE__, state, name: __MODULE__)
-  end
+    Circuits.UART.open(state, "/dev/ttyACM0", speed: 9600, active: false)
+
+end
 
   def get_data, do: GenServer.call(__MODULE__, :get_data)
 
@@ -16,4 +18,5 @@ end
 
 Ymn.start
 msg = Ymn.get_data
-{:ok ,msg}
+Circuits.UART.write(msg , v1)
+{:ok, msg} = Circuits.UART.read(pid, 1000)
