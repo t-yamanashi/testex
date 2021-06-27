@@ -15,5 +15,5 @@ defmodule Ymn do
 end
 
 Ymn.start
-msg = YMN.get_data
+msg = Ymn.get_data
 {:ok ,"msg"}
