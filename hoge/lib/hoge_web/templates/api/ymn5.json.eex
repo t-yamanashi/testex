@@ -16,4 +16,4 @@ end
 
 Ymn.start
 msg = Ymn.get_data
-{:ok ,"msg"}
+{:ok ,msg}
