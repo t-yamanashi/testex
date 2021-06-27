@@ -19,5 +19,5 @@ end
 Ymn.start
 pid = Ymn.get_data
 #Circuits.UART.write(pid , v1)
-#{:ok, msg} = Circuits.UART.read(pid, 1000)
+{:ok, msg} = Circuits.UART.read(pid, 1000)
 {:ok, "test"}
