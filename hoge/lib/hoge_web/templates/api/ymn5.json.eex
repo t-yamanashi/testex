@@ -16,4 +16,4 @@ end
 
 #Ymn.start
 #msg = get_data
-{ok: ,"msg"}
+{:ok ,"msg"}
