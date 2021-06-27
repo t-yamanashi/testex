@@ -1,0 +1,21 @@
+defmodule Ymn do
+  use GenServer
+
+  ### GenServer API
+
+  def init(state), do: {:ok, state}
+
+
+
+  def handle_call(:get_data, _from, state), do: {:reply, state, state}
+
+
+  def start do
+    {:ok ,state} = Circuits.UART.start_link 
+    GenServer.start_link(__MODULE__, state, name: __MODULE__)
+  end
+
+  def get_data, do: GenServer.call(__MODULE__, :get_data)
+
+end
+
