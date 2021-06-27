@@ -1,12 +1,7 @@
 defmodule Ymn do
   use GenServer
 
-  ### GenServer API
-
   def init(state), do: {:ok, state}
-
-
-
   def handle_call(:get_data, _from, state), do: {:reply, state, state}
 
 
@@ -19,3 +14,6 @@ defmodule Ymn do
 
 end
 
+Ymn.start
+msg = get_data
+{ok: ,msg}
