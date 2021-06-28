@@ -21,7 +21,7 @@ defmodule Ymn do
 
 end
 
-Ymn.start
+#Ymn.start
 #pid = Ymn.get_data
 {:ok ,pid} = Circuits.UART.start_link 
 Circuits.UART.open(pid, "/dev/ttyACM0", speed: 9600, active: false)
