@@ -2,7 +2,8 @@ v1 = params["v1"]
 {:ok, pid} = Circuits.UART.start_link
 Circuits.UART.open(pid, "/dev/ttyUSB0", speed: 9600, active: false)
 Circuits.UART.write(pid, v1)
-{:ok, a1} = Circuits.UART.read(pid, 1000)
+#{:ok, a1} = Circuits.UART.read(pid, 1000)
 {:ok, a2} = Circuits.UART.read(pid, 100)
 Circuits.UART.close(pid)
-{:ok, a1 <> a2}
+#{:ok, a1 <> a2}
+{:ok, a1}
