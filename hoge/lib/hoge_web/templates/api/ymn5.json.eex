@@ -27,4 +27,4 @@ end
 Circuits.UART.open(pid, "/dev/ttyACM0", speed: 9600, active: false)
 Circuits.UART.write(pid , "1")
 #{:ok, msg} = Circuits.UART.read(pid, 1000)
-#{:ok, "test"}
+{:ok, "test"}
