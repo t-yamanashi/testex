@@ -6,4 +6,4 @@ Circuits.UART.write(pid, v1)
 {:ok, a2} = Circuits.UART.read(pid, 100)
 Circuits.UART.close(pid)
 #{:ok, a1 <> a2}
-{:ok, a1}
+{:ok, a2}
